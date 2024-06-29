@@ -126,7 +126,7 @@ export default function ViewEnquiry(props: IViewCareerProps) {
                 </Grid>
                 <Grid item>
                   <Typography variant="body1" gutterBottom>
-                    13-12-201
+                    {props.objInquiry && props.objInquiry.Date}
                   </Typography>
                 </Grid>
               </Grid>

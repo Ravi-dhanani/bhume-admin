@@ -48,8 +48,8 @@ export default function Enquiry() {
         title={"Enquiry"}
         columns={[
           {
-            title: "Sr No.",
-            field: "index",
+            title: "#",
+            field: "tableData.id",
             render: (rowData: any) => {
               return <p>{rowData.tableData.id + 1}</p>;
             },

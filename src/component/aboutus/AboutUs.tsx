@@ -98,7 +98,7 @@ export default function AboutUs() {
             <div>
               <TextField
                 id="outlined-basic"
-                label="titles"
+                label="About Us"
                 variant="outlined"
                 focused
                 {...register("title")}

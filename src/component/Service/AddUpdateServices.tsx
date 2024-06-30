@@ -110,10 +110,7 @@ export default function AddUpdateServices(props: IAddUpdateServicesProps) {
     queryKey: ["lstLanguage"],
     queryFn: ApiServices.getLstLanguage,
   });
-  // React.useEffect(() => {
-  //   const res = ApiServices.getLstLanguage();
-  //   setData(res);
-  // }, []);
+
   return (
     <div>
       <BootstrapDialog

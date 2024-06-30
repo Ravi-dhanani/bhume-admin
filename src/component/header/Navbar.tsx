@@ -1,4 +1,3 @@
-"use client";
 import { styled } from "@mui/material/styles";
 import * as React from "react";
 
@@ -148,20 +147,7 @@ export default function Navbar(props: INavbarProps) {
           >
             <MenuIcon style={{ color: "white" }} />
           </IconButton>
-          {/* <Box sx={{ display: { xs: "block", sm: "none" } }}>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              sx={{ mr: 2, color: "white" }}
-              onClick={() => {
-                setMobileOpen(true);
-              }}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Box> */}
+
           <Typography variant="h6" noWrap component="div" color={"white"}>
             Bhume
           </Typography>

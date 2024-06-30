@@ -1,4 +1,3 @@
-"use client";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { makeStyles } from "@material-ui/core";
 import {
@@ -141,25 +140,11 @@ export default function HomePage() {
           </Grid>
 
           <Grid item xs={12} marginBottom={"10px"}>
-            {/* <TextField
-              margin="normal"
-              fullWidth
-              id="title"
-              label="Title"
-              autoComplete="Title"
-              {...register("title")}
-              defaultValue={objHome?.title ? objHome?.title : ""}
-              focused
-              helperText={errors.title ? errors.title.message : null}
-              error={errors.title ? true : false}
-              autoFocus
-            /> */}
             <InputLabel id="demo-simple-select-label">Title</InputLabel>
             <div className={classes?.editorContainer}>
               <Controller
                 name="title"
                 control={control}
-                // defaultValue={objHome?.title ? objHome?.title : ""}
                 rules={{ required: true }} // Apply validation rules
                 render={({ field }) => <RichTextEditer field={field} />}
               />
@@ -175,7 +160,6 @@ export default function HomePage() {
               <Controller
                 name="description"
                 control={control}
-                // defaultValue={objHome?.description ? objHome?.description : ""}
                 rules={{ required: true }} // Apply validation rules
                 render={({ field }) => <RichTextEditer field={field} />}
               />

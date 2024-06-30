@@ -14,9 +14,7 @@ export default function MainLayout(props: { children?: any }) {
         <Box sx={{ display: { sm: "block", xs: "none" } }}>
           <Sidebar open={!open} />
         </Box>
-        {/* <Box sx={{ display: { md: "none", sm: "none", xs: "block" } }}>
-          <MobileSidebar open={MobileOpen} setOpen={setMobileOpen} />
-        </Box> */}
+
         <Box component="main" sx={{ flexGrow: 1, pt: 10, pl: 2, pr: 2 }}>
           {props.children}
         </Box>

@@ -61,7 +61,6 @@ export default function Enquiry() {
         ]}
         data={lstInquiry?.data}
         setDeleteId={delete_EnquiryData}
-        // setOpen={setOpen}
         setObject={setObjInquiry}
         isLoading={lstInquiry.isLoading}
         editview={true}

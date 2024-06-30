@@ -5,7 +5,6 @@ import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
@@ -17,7 +16,6 @@ import { setLoading, setLogged } from "../redux/commonSlice";
 import { dispatch } from "../redux/store";
 import ApiServices from "../services/Apiservices";
 import AuthServices from "../services/AuthServices";
-
 const schema = yup
   .object({
     email: yup.string().required(),
@@ -60,17 +58,17 @@ export default function Login() {
           sm={4}
           md={6}
           sx={{
-            backgroundImage:
-              "url(https://random-image-pepebigotes.vercel.app/api/random-image)",
-            backgroundRepeat: "no-repeat",
-            backgroundColor: (t) =>
-              t.palette.mode === "light"
-                ? t.palette.grey[50]
-                : t.palette.grey[900],
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-        />
+        >
+          <img
+            src={require("./Logo.png")}
+            style={{ objectFit: "fill", width: "30%" }}
+          />
+        </Grid>
         <Grid item xs={12} sm={8} md={6}>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div

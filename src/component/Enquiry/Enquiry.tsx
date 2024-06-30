@@ -42,21 +42,18 @@ export default function Enquiry() {
       });
     }
   }
+  lstInquiry?.data?.map(function (currentValue: any, Index: number) {
+    currentValue.Sr_No = Index + 1;
+    return currentValue;
+  });
   return (
     <div>
       <DataTable
         title={"Enquiry"}
         columns={[
-          {
-            title: "#",
-            field: "tableData.id",
-            render: (rowData: any) => {
-              return <p>{rowData.tableData.id + 1}</p>;
-            },
-          },
+          { title: "#", field: "Sr_No" },
           { title: "Name", field: "name" },
 
-          // lstInquiry.data.indexOf(index) + 1,
           { title: "CompanyName", field: "companyName" },
           { title: "Email", field: "email" },
           { title: "Mobile No", field: "mobileNo" },

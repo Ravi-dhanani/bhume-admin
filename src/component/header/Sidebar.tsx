@@ -101,16 +101,6 @@ export const sidebar = [
     route: "/aboutus",
     icon: <Diversity3Icon />,
   },
-  {
-    Name: "Privacy Policy",
-    route: "/privacy-policy",
-    icon: <PrivacyTipOutlinedIcon />,
-  },
-  {
-    Name: "Terms and Condition",
-    route: "/terms-condition",
-    icon: <PrivacyTipOutlinedIcon />,
-  },
 ];
 export default function Sidebar(props: ISidebar) {
   const theme = useTheme();

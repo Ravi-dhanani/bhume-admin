@@ -99,7 +99,7 @@ export default function Login() {
                   align="center"
                   fontWeight={600}
                 >
-                  Bhume Engineering
+                  BHUME Engineering
                   <br />
                   Sign In
                 </Typography>

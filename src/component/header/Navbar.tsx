@@ -149,7 +149,7 @@ export default function Navbar(props: INavbarProps) {
           </IconButton>
 
           <Typography variant="h6" noWrap component="div" color={"white"}>
-            Bhume
+            BHUME ENGINEERING
           </Typography>
 
           <Box sx={{ flexGrow: 1 }} />
